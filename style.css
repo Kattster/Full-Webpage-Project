@@ -187,23 +187,43 @@ i{
 }
 
 /* SERVICES */
+#services{
+    background-image: url(Images/Flyrail.png);
+    /* opacity: 0.5; */
+    background-position: center;
+    background-size: contain;
+    font-family: 'Kufam', sans-serif;
+    color: #A65E44;
+    }
+.page-title{
+    background-color: #072126;
+    padding: 20px;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
 #services > .container{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 3fr ;
+    grid-template-rows: 3fr;
+
 }
 
 #services p{
     font-family: 'Kufam', sans-serif;
+    color: #f4f4f4;
+    background-color: #072126;
 }
 #services li{
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 5px;
+    background-color: #072126;
 }
 
 #services .sidebar{
     margin-top: 50px;
+     margin-left: 50px;
 }
 
 #services input, #services textarea{
@@ -236,7 +256,7 @@ footer{
         width: 80%;
     }
     #about > .container, 
-    #services > .container, {
+    #services > .container {
         grid-template-columns: 1fr;
     }
     }
