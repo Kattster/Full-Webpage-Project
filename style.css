@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,800;1,400&family=Lato:wght@400;700&display=swap');
+/* Importing the Kufam Google Font (regular and bold) */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+p {
+    font-family: 'Kufam', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    /* The overflow property determines what to do if the content overflows an element's box. Setting overflow to "hidden" will hide/clip the overflowing content. */
+    overflow: hidden;
+}
+ header ul{
+     margin: 0;
+     padding: 0;
+ }
+.btn-1{ 
+    height: 38px;
+    background-color: #eb4442;
+    border: 3px groove #1B6C8C;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+.light, .dark {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.light{
+    background-color: #f5b68e;
+    color: #072126;
+}
+
+.dark{
+    background-color: #072126;
+    color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background-color: #072126;
+    color: #f4f4f4;
+    /* Setting min-height so the header for the section can expand if needed */
+    min-height: 70px;
+    border-bottom: 5px groove #A65E44;
+    padding: 5px 0;
+
+    /* Margin outside border, padding inside border */
+    /* MBPC (outside-in) Margin, Border, Padding, Content */
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header li {
+    list-style: none;
+    padding: 0 20px;
+}
+header a{
+    color: #D9A78B;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#highlight, #current a{
+    color: #eb4442;
+    font-weight: 700;
+    font-weight: bold;
+}
+#current a:hover, a:hover {
+    color: #f4f4f4;
+    font-weight: 400;
+    border: 2px solid #f4f4f4;
+    border-radius: 120px;
+    padding: 5px;
+}
+/* SHOWCASE */
+#showcase{
+    min-height: 400px;
+    background-image: url(Images/laptop.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+#showcase h1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+#showcase h2{
+    margin-top: 50px;
+    font-size: 35px;
+}
+#showcase p{
+    font-size: 20px;
+    font-family: 'Kufam', sans-serif;
+}
+
+/* NEWSLETTER */
+#newsletter{
+    background-color: #1B6C8C;
+    padding: 15px;
+    color: #e6e6e6;
+}
+#newsletter > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#newsletter input{
+     padding: 4px;
+     height: 25px;
+     width: 250px
+}
+
+/* BOXES */
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes > .container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+}
+
+.box{
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+i{
+    font-size: 225px;
+}
+
+.fa-html5{
+    color: #A65E44;
+}
+.fa-css3-alt{
+    color: #2d50dc;
+}
+.fa-js{
+    color: #eed831;
+}
+
+/* ABOUT */
+#about{
+    background-color: #072126;
+    padding: 20px;
+}
+ #about p {
+        font-family: 'Kufam', sans-serif;
+    }
+
+#about > .container{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 50px;
+}
+
+#about .main-col{
+    color: #fff;
+}
+
+#about .sidebar{
+    margin-top: 10px;
+}
+
+/* SERVICES */
+#services > .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 3fr ;
+}
+
+#services p{
+    font-family: 'Kufam', sans-serif;
+}
+#services li{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+#services .sidebar{
+    margin-top: 50px;
+}
+
+#services input, #services textarea{
+    padding: 5px;
+    width: 90%;
+}
+
+footer{
+    background-color: #072126;
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    header > .container, 
+    #newsletter > .container, 
+    #boxes > .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #showcase.container {
+        padding-bottom: 50px;
+    }
+    .box{
+        width: 80%;
+    }
+    #about > .container, 
+    #services > .container, {
+        grid-template-columns: 1fr;
+    }
+    }
+
+
+
+
+
+
+
+/* Color Theme Swatches from adobe colors "fashion" */
+body{
+color: #A65E44;
+color: #D9A78B #f5b68e;
+color: #1B6C8C; 
+color: #248EA6; 
+color: #072126; 
+}
+
+
+
+
+
